@@ -14,6 +14,7 @@ class HomeStorage extends StatefulWidget {
   State<StatefulWidget> createState() => HomeStorageState();
 }
 
+
 class HomeStorageState extends State {
   bool isloading = true;
   List<Map<String, dynamic>> datas = [];
@@ -35,7 +36,7 @@ class HomeStorageState extends State {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sqflite Demo'),
+        title: const Text('Sqflite'),
       ),
       body: isloading
           ? const CircularProgressIndicator()
